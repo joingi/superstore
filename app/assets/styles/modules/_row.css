@@ -1,0 +1,14 @@
+.row {
+	overflow: hidden;
+
+	&__4 {
+		float: left;
+		width: 30%;
+
+	}
+
+	&__8 {
+		float: right;
+		width: 60%;
+	}
+}
