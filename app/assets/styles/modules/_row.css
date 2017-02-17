@@ -1,14 +1,72 @@
+
+/*	Rows */
 .row {
-	overflow: hidden;
 
-	&__4 {
-		float: left;
-		width: 30%;
+  @mixin clearfix;
+
+ 	&--gutters {
+    margin-right: -65px;
+  }
+
+	&--gutters-large {
+	margin-right: -100px;
+  }
+
+  &--gutters-small{
+  	margin-right: -30px;
+  }
+
+  &--gutters > div {
+    padding-right: 65px;
+  }
+
+  &--gutters-small > div {
+  	padding-right: 30px;
+  }
+
+  &__b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+
+  @mixin mView {
+
+    &__b-margin-until-medium {
+      margin-bottom: 0;
+    }
+
+    &__medium-4 {
+      float: left;
+      width: 33.33%;
+    }
+
+/*    &__medium-4--larger {
+      width: 37%;
+    }*/
+
+    &__medium-3 {
+      float: left;
+      width: 25%;
+    }
+
+    &__medium-3--larger {
+      width: 25%;
+    }
+
+    &__medium-6--smaller {
+      width: 100%;
+    }
+  }
+/* Equal height row*/
+&--equal-height-at-medium  {
+	@mixin mView {
+		display: flex;
 
 	}
 
-	&__8 {
-		float: right;
-		width: 60%;
+	& > div {
+		float: none;
+		display: flex;
 	}
+}
+
 }

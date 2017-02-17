@@ -4,6 +4,17 @@
 	@mixin mView {
 		padding: 4.5rem 0;
 	}
+
+	&--no-b-padding {
+		padding-bottom: 0px;
+
+		@mixin mView {
+			padding-bottom: 4.5rem;
+		}
+
+	}
+
+	
 	
 
 	&--blue {

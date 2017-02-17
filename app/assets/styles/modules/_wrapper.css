@@ -1,12 +1,22 @@
 .wrapper {
 	padding-left: 18px;
 	padding-right: 18px;
-	max-width: 1200px;
+	max-width: 1171px;
 	margin-left: auto;
 	margin-right: auto;
 
 	&--medium {
 		max-width: 976px;
+	}
+
+	&--no-padding-until-medium {
+		padding-left: 0;
+		padding-right: 0;
+
+		@mixin mView {
+			padding-left: 18px;
+			padding-right: 18px;
+		}
 	}
 
 	.wrapper {

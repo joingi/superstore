@@ -2,6 +2,7 @@
 	font-size: 1.9rem;
 	font-weight: 300;
 	color: $mainBlue;
+	text-transform: uppercase;
 
 	@mixin sView {
 		font-size: 2.875rem;
@@ -16,7 +17,7 @@
 	}
 
 	&--small {
-		font-size: 1.2rem;
+		font-size: 1.416rem;
 
 		@mixin sView {
 			font-size: 1.875rem;
@@ -32,6 +33,7 @@
 
 	‰--light {
 		font-weight: 100; 
+		text-transform: uppercase;
 	}
 
 	strong {
