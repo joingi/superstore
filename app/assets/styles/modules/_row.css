@@ -29,7 +29,6 @@
   }
 
   @mixin mView {
-
     &__b-margin-until-medium {
       margin-bottom: 0;
     }
@@ -56,17 +55,59 @@
       width: 100%;
     }
   }
-/* Equal height row*/
-&--equal-height-at-medium  {
-	@mixin mView {
-		display: flex;
 
-	}
+  @mixin lView {
+    &__b-margin-until-medium {
+      margin-bottom: 0;
+    }
 
-	& > div {
-		float: none;
-		display: flex;
-	}
-}
+    &__large-4 {
+      float: left;
+      width: 33.33%;
+    }
+
+/*    &__large-4--larger {
+      width: 37%;
+    }*/
+
+    &__large-3 {
+      float: left;
+      width: 25%;
+    }
+
+    &__large-3--larger {
+      width: 25%;
+    }
+
+    &__large-6--smaller {
+      width: 100%;
+    }
+  }
+
+
+  /* Equal height row*/
+  &--equal-height-at-medium  {
+    @mixin mView {
+      display: flex;
+
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
+
+  &--equal-height-at-large  {
+    @mixin lView {
+      display: flex;
+
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
 
 }

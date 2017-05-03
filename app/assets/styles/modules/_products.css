@@ -3,7 +3,7 @@
 	padding: 0 16px 1px 16px;
 	margin-bottom: 48px;
 
-	@mixin mView {
+	@mixin lView {
 		/*margin-bottom: 0px;*/
 		padding: 0 1.375rem 1px 1.375rem;
 	}
