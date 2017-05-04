@@ -9,8 +9,8 @@ var mixins = require('postcss-mixins');
 gulp.task('styles', function() {
   return gulp.src('./app/assets/styles/styles.css')
   	.pipe(postcss([cssImport, mixins, cssvars, nestedcss, autoprefixer]))
-  	
-  	//if error log out error massage but please/emit continue  
+
+  	//if error log out error massage but please/emit continue
   	.on('error', function(errorInfo) {
   		console.log(errorInfo.toString());
   		this.emit('end');
