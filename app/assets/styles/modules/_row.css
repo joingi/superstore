@@ -100,7 +100,7 @@
 
   }
 
-  /* Begin Equal Height Rules */
+  /* ||| Equal Height Rules ||| */
   &--equal-height-at-medium {
     @mixin mView {
       display: flex;
