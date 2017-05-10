@@ -20,7 +20,7 @@
       <!--<li><i class="fa-li fa fa-check-square"></i>+45 2266077</li>
       <li><i class="fa-li fa fa-check-square"></i>Lorem@Ipsum.com</li>-->
       <div class="site-header__btn-container">
-        <a class="btn btn-default btn-sm" href="#"><i class="fa fa-cog"></i> Checkout</a>
+        <a class="btn btn-default btn-sm open-modal" href="#"><i class="fa fa-cog"></i> Checkout</a>
       </div>
 
       <div class="site-header__menu-icon">
@@ -38,7 +38,7 @@
             <li><a href="#about" id="features-link">Our Feature</a></li>
 
             <!-- Search -->
-            <li><input type="text" placeholder="Search"><a class="btn btn-default btn-sm" href="#"><i class="fa fa-square">search</i></a></li>
+            <li><input type="text" placeholder="Search"><a class="btn btn-default btn-sm" href="#"><i class="fa fa-square"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -340,10 +340,27 @@
   <footer class="site-footer">
     <div class="wrapper">
       <span class="site-footer__text">
-      <p>Copyright &copy; 2016 Clear View Escapes. All rights reserved. <a href="#" class="btn btn--orange">Get in Touch</a></p>
+      <p>Copyright &copy; 2016 Clear View Escapes. All rights reserved. <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
       </span>
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="modal__inner">
+      <h2 class="section-title section-title--blue section-title--less-margin"><span class="icon icon--mail section-title__icon"></span> Get in <strong>Touch</strong></h2>
+      <div class="wrapper wrapper--narrow">
+        <p class="modal__description">You bring the Game. We bring you the style! <br>Connect with us!</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
+        <a href="#" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
+        <a href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
+        <a href="#" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div>
 
 <script src="/temp/scripts/App.js"></script>
 </body>
