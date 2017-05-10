@@ -26,12 +26,14 @@
 		color: #fff;
 	}
 
-	&--products {
+	&--testimonials {
 		background-color: #e0e6ef;
 
 		@mixin lView {
-			background: url(/assets/images/testimonials-bg.jpg);
-			background-size: cover;
+			&.lazyloaded {
+				background: url(/assets/images/testimonials-bg.jpg);
+				background-size: cover;
+			}
 		}
 	}
 }
