@@ -5,15 +5,15 @@
 @import "base/_mixins";
 @import "modules/_large-hero";
 @import "modules/_btn";
-@import "modules/_general-content-container";
 @import "modules/_wrapper";
 @import "modules/_page-section";
 @import "modules/_headline";
+
+@import "modules/_general-content-container";
 @import "modules/_section-title";
+@import "modules/_products";
 @import "modules/_featured-item";
 @import "modules/_testimonial";
-@import "modules/_row";
-@import "modules/_products";
 @import "modules/_sprite";
 @import "modules/_footer";
 @import "modules/_header";
@@ -21,3 +21,4 @@
 @import "modules/_reveal-item";
 @import "modules/_modal";
 @import "modules/_social-icons";
+@import "modules/_row";

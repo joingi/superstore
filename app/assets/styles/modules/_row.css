@@ -1,10 +1,8 @@
-
-/*	Rows */
 .row {
 
   @mixin clearfix;
 
- 	&--t-padding {
+  &--t-padding {
     padding-top: 80px;
   }
 
@@ -36,10 +34,9 @@
     margin-bottom: 1rem;
   }
 
-/* ||| MEDIUM SCREEN ||| */
   @mixin mView {
 
-   &__b-margin-until-medium {
+    &__b-margin-until-medium {
       margin-bottom: 0;
     }
 
@@ -68,7 +65,6 @@
 
   }
 
-  /* ||| LARGE SCREEN |||*/
   @mixin lView {
 
     &__b-margin-until-large {
@@ -100,13 +96,13 @@
 
   }
 
-  /* ||| Flexbox Equal Height Rules ||| */
+  /* Begin Equal Height Rules */
   .flexbox &--equal-height-at-medium {
     @mixin mView {
       display: flex;
     }
 
-    & > div {
+    &> div {
       float: none;
       display: flex;
     }
@@ -118,10 +114,11 @@
       display: flex;
     }
 
-    & > div {
+    &> div {
       float: none;
       display: flex;
     }
 
   }
+
 }
